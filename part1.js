@@ -19,3 +19,14 @@ function mysteryScoping3() {
     }
     console.log(x);
 }
+
+mysteryScoping3(); // SyntaxError
+
+function mysteryScoping4() {
+    let x = 'out of block';
+    if (true) {
+        let x = 'in block';
+        console.log(x);
+    }
+    console.log(x);
+}
